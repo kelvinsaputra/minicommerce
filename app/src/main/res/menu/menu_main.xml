@@ -2,8 +2,29 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.radioandactive.minicommerce.MainActivity">
-    <item android:id="@+id/action_settings"
+
+    <group android:checkableBehavior="single">
+
+    <item android:id="@+id/action_home"
           android:title="@string/action_settings"
           android:orderInCategory="100"
+          android:icon="@drawable/ic_home_black_24dp"
           app:showAsAction="never"/>
+    <item android:id="@+id/action_jeans"
+          android:title="Jeans"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_monetization_on_black_24dp"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_shorts"
+          android:title="Shorts"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_monetization_on_black_24dp"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_admin"
+            android:title="Admin"
+            android:orderInCategory="100"
+            android:icon="@drawable/ic_admin_black_24dp"
+            app:showAsAction="never"/>
+
+    </group>
 </menu>

@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+        android:padding="16dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/iv_photo"
+            android:scaleType="centerCrop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+    <ImageView
+            android:id="@+id/iv_sale"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_photo"
+            app:layout_constraintTop_toTopOf="@id/iv_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_attach_money_black_24dp" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_photo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="12dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:text="Organic Apple Souce"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="12dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        tools:text="$5000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
